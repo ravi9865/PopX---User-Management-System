@@ -1,38 +1,416 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+:root {
+  --font-family-rubik: "Rubik", sans-serif;
+  --rubkia-bigger-rubik: 30px;
+  --rubkia-smaller-rubik: 14px;
+  --rubkia-medium-rubik: 19px;
+  --Font-small-rubik: 16px;
+  --Font-Weight-rubik: 600;
+}
+.mainApp {
+  width: 375px;
+  height: 812px;
+  background: #f7f8f9 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border: 1px solid rgba(92, 90, 90, 0.397);
+  position: relative;
+}
+.home-page {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  padding: 10px;
+}
+#contentHomeP {
+  width: 100%;
+  font-family: var(--font-family-rubik);
+  font-weight: var(--Font-Weight-rubik);
+  word-spacing: 0;
+  margin-bottom: 60px;
+}
+#contentHomeP a {
+  text-transform: none;
+}
+#contentHomeP > h1 {
+  text-align: left;
+  font: normal normal medium 28px/17px var(--font-family-rubik);
+  font-size: var(--rubkia-bigger-rubik);
+  font-weight: var(--Font-Weight-rubik);
+  letter-spacing: 0px;
+  color: #1d2226;
+  opacity: 1;
+}
+#contentHomeP > p {
+  width: 241px;
+  text-align: left;
+  font: normal normal normal 18px/26px var(--font-family-rubik);
+  letter-spacing: 0px;
+  color: #1d2226;
+  opacity: 0.6;
+}
+#contentHomeP button {
+  width: 100%;
+  height: 46px;
+  opacity: 1;
   text-align: center;
+  font: normal normal medium 16px/17px var(--font-family-rubik);
+  letter-spacing: 0px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  margin-top: 4px;
+}
+#contentHomeP .btnsign {
+  background: #6c25ff 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+}
+#contentHomeP .btnsign:hover {
+  opacity: 0.9;
+}
+#contentHomeP .btnLogin {
+  color: black;
+  background: #6e25ff56 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+}
+#contentHomeP .btnLogin:hover {
+  opacity: 0.9;
+}
+.footerPage {
+  color: whitesmoke;
+  width: 100%;
+  /* height: 50px; */
+  margin-top: 10px;
+  text-align: center;
+  padding: 15px 0px;
+  background-color: #0307147e;
+  position: absolute;
+  bottom: 0px;
+}
+.footerPage h3 {
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 400px;
+  /* color: black; */
+}
+.footerPage h3 > a {
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 400px;
+  color: rgb(193, 155, 251);
+}
+.footerPage h3 > a:hover {
+  color: rgb(36, 163, 188);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* create Account Pages */
+.createAccount {
+  position: absolute;
+  top: 0;
+  left: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.css-1tuginu:first-of-type {
+  margin-top: 0.42rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.createAccount > h1 {
+  margin-top: 10px;
+  top: 40px;
+  width: 200px;
+  height: 69px;
+  text-align: left;
+  font: normal normal medium 28px/36px var(--font-family-rubik);
+  font-size: var(--rubkia-bigger-rubik);
+  font-weight: var(--Font-Weight-rubik);
+  letter-spacing: 0px;
+  color: #1d2226;
+  opacity: 1;
+}
+.css-1pysi21-MuiFormLabel-root-MuiInputLabel-root {
+  font: normal normal normal 13px/17px var(--font-family-rubik);
+  letter-spacing: 0px;
+  color: #6c25ff;
+}
+.boxStyle {
+  border-radius: 6px;
+  opacity: 1;
+}
+.radioButton > h2 {
+  margin-top: 1rem;
+  margin-bottom: 0.7rem;
+  font: normal normal normal 13px/17px var(--font-family-rubik);
+  font-size: 20px;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+.radioButton > label {
+  font-size: var(--rubkia-medium-rubik);
+  letter-spacing: 0px;
+  color: #1d2226;
+  opacity: 1;
+  margin: 0rem 0.745rem;
+}
+.radioButton {
+  font-size: 1.4vw;
+}
+.radioButton input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #6c757d;
+  border-radius: 50%;
+  margin-right: 0px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.radioButton input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #0d67b7;
+}
+.createAccount > button {
+  margin-top: 7%;
+  width: 335px;
+  height: 46px;
+  background: #6c25ff 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  opacity: 1;
+  outline: none;
+  border: none;
+  color: whitesmoke;
+}
+.createAccount > button:hover {
+  opacity: 0.89;
+}
+.headerDiv {
+  width: 373px;
+  height: 68px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 11px #00000014;
+  opacity: 1;
+  margin: 0px;
+}
+.headerDiv > h1 {
+  width: 146px;
+  height: 22px;
+  margin-left: 20px;
+  padding-top: 5px;
+  font: normal normal normal 18px/21px var(--font-family-rubik);
+  letter-spacing: 0px;
+  color: #1d2226;
+  text-transform: capitalize;
+  opacity: 1;
+}
+/* use Profile  */
+.userProfile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  padding: 20px;
+  border: 1px dashed #e6e6e6;
+}
+.profilePictureAnduserInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 0.9rem;
+}
+.imageSection > img {
+  width: 69px;
+  height: 69px;
+  opacity: 1;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.imageSection {
+  position: relative;
+}
+.imageSection > svg {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.userInfo {
+  text-align: left;
+  font: normal normal medium 15px/19px var(--font-family-rubik);
+  letter-spacing: 0px;
+  color: #1d2226;
+  text-transform: capitalize;
+  opacity: 1;
+}
+.userInformation p {
+  width: 337px;
+  height: 63px;
+  text-align: justify;
+  font: normal normal normal 14px/22px var(--font-family-rubik);
+  letter-spacing: 0px;
+  color: #1d2226;
+  text-transform: capitalize;
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Login Page Style */
+.loginForm {
+  width: 375px;
+  height: 812px;
+  background: #f7f8f9 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border: 1px solid rgba(92, 90, 90, 0.397);
+  outline: none;
+}
+.createAccount h2 {
+  margin-top: 0.93rem;
+  width: 190px;
+  /* height: 69px; */
+  text-align: left;
+  font: normal normal medium 28px/36px Rubik;
+  font-size: var(--rubkia-medium-rubik);
+  letter-spacing: 0px;
+  color: #1d2226;
+  opacity: 1;
+}
+.loginPage h2 {
+  margin-top: 0.93rem;
+  width: 190px;
+  /* height: 69px; */
+  text-align: left;
+  font: normal normal medium 28px/36px Rubik;
+  font-size: var(--rubkia-bigger-rubik);
+  letter-spacing: 0px;
+  color: #1d2226;
+  opacity: 1;
+}
+.loginBtn {
+  width: 335px;
+  height: 46px;
+  background: #cbcbcb 0% 0% no-repeat padding-box !important;
+  border-radius: 6px;
+  opacity: 1;
+}
+.homeGoTo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.2rem;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 0.72rem;
+  font-size: var(--rubkia-medium-rubik);
+  font-weight: 450;
+  font-family: var(--font-family-rubik);
+}
+.headerDiv > .homeGoTo {
+  margin-left: 20px;
+}
+.homeGoTo:hover {
+  color: blue;
+  cursor: grab;
+}
+
+/* small Device */
+@media screen and (max-width: 381px) {
+  body {
+    width: 100%;
+    padding: 0px;
+    align-items: flex-start;
+    background: #f7f8f9 0% 0% no-repeat padding-box;
   }
-  to {
-    transform: rotate(360deg);
+  .mainApp {
+    width: 100%;
+    height: unset;
+    border: none;
+    margin: 0;
+    padding: 0;
   }
+  .root {
+    margin: 0;
+    padding: 0;
+  }
+  .home-page {
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    margin-top: 660px;
+    padding: 10px;
+  }
+  .createAccount > h1 {
+    margin-top: 15px;
+    width: 220px;
+    height: 54px;
+    font-size: 22px;
+    font-weight: var(--Font-Weight-rubik);
+    margin-bottom: 0.2rem;
+  }
+  .homeGoTo {
+    font-size: var(--rubkia-medium-rubik);
+    gap: 0.1rem;
+    padding-top: 0.32rem;
+    font-weight: 350;
+  }
+  .boxStyle {
+    margin-top: 0.02rem;
+    width: 99% !important;
+  }
+  .css-1tuginu > :not(style) {
+    margin: 8px;
+    width: 100% !important;
+  }
+  .loginForm {
+    width: 100%;
+    height: initial;
+    background: #f7f8f9 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  .loginPage h2 {
+    font-size: 22px;
+  }
+  .radioButton > label {
+    font-size: var(--rubkia-smaller-rubik);
+  }
+  .createAccount {
+    position: relative;
+    margin-left: 6px;
+    width: 100%;
+  }
+  .createAccount > button {
+    margin-top: 10%;
+    width: 100%;
+    height: 46px;
+    background: #6c25ff 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    outline: none;
+    border: none;
+    color: whitesmoke;
+    margin-left: 5px;
+  }
+  .headerDiv > h1 {
+    padding-top: 5px;
+  }
+}
+
+.labelWithAsterisk::after {
+  content: "*";
+  color: red;
+}
+.scroll-transition {
+  transition: transform 0.5s ease-in-out;
 }
