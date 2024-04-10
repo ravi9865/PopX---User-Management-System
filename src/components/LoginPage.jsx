@@ -18,7 +18,7 @@ const LoginPage = () => {
     }
     const formData = localStorage.getItem("formData");
     const formDataString = JSON.parse(formData);
-    if (formDataString.email===email || formDataString===password) {
+    if (formDataString.email.trim() === email.trim() || formDataString.password.trim() === password.trim()) {
       navigate("/account-settings");
     }else{
       alert("Invalid Email/Password!")
